@@ -1,1 +1,15 @@
-<h1><%= @members.size %> for Gryffindor</h1>
+<h1>Order of the Phoenix</h1>
+<h3><%= @members.size %> for Gryffindor</h3>
+
+<% @members.each do |member| %>
+  <ul class="members">
+    <li class="name"><%= member[:name] %></li>
+    <li class="role"><% if member[:role] %>
+      <%= member[:role] %>
+    <% end %></li>
+    <li class="house"><%= member[:house] %></li>
+    <li class="patronus"><% if member[:patronus] %>
+      <%= member[:patronus] %>
+    <% end %></li>
+  </ul>
+<% end %>
