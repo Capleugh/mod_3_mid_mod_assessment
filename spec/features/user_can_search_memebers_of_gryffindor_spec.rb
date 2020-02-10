@@ -12,7 +12,7 @@ describe 'As a user' do
       expect(current_path).to eq(search_path)
 
       expect(page).to have_content('21 for Gryffindor')
-      expect(page).to have_content('Order of the Phoenix')
+      expect(page).to have_content('Order of the Phoenix members')
 
       expect(page).to have_css('.members', count: 21)
 
