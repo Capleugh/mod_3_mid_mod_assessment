@@ -1,0 +1,2 @@
+class MemberSearch
+end
