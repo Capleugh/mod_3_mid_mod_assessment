@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe 'As a user' do
   describe 'when I visit /' do
-    it "when I select Gryffindor and click search for memebers, I should see total number of members for that house and I should see a list of the 21 members of the order of the phoenix for that house" do
+    it "when I select Gryffindor and click search for memebers, I should see total number of members for that house and I should see a list of the 21 members of the order of the phoenix for that house along with their name, role, house, and patronus" do
+
       visit '/'
 
       select 'Gryffindor', from: :house
@@ -25,14 +26,3 @@ describe 'As a user' do
     end
   end
 end
-
-
-
-# Then I should see a total of the number of members for that house. (21 for Gryffindor)
-# And I should see a list of the 21 members of the Order of the Phoenix for house Gryffindor.
-#
-# And for each of the members I should see:
-# - The name of the member
-# - The members role (if it exists)
-# - The house the member belongs to
-# - The Patronus of the member (if it exists)
